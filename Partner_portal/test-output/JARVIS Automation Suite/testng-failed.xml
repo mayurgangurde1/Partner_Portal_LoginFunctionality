@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [JARVIS Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="LoginTest.TestClass">
+        <methods>
+          <include name="SelectCheckbox"/>
+          <include name="ConfirmRiskProfile"/>
+          <include name="SelectPlan"/>
+          <include name="setup"/>
+          <include name="ClickOnPayNowButton"/>
+          <include name="SelectStrategy"/>
+          <include name="ClickOnSubmitMyStrategy"/>
+          <include name="AttemptQuestionnaries"/>
+          <include name="ClickOnInvestNowButton"/>
+          <include name="UnlockPortfolioButton"/>
+          <include name="ClickOnStartNowButton"/>
+          <include name="CLickOnContinueButton"/>
+          <include name="ConfirmResponces"/>
+          <include name="SelectTenure1"/>
+          <include name="ClickOnIAgreeButton"/>
+          <include name="SelectAmount"/>
+          <include name="ConfirmInvestmentPreference"/>
+          <include name="VerifyLoginFunctionality"/>
+          <include name="ClickOnSubmitMyResponcesButton"/>
+        </methods>
+      </class> <!-- LoginTest.TestClass -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [JARVIS Automation Suite] -->
