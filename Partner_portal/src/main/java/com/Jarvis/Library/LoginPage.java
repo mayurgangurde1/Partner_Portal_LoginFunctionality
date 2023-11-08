@@ -50,7 +50,7 @@ public class LoginPage extends BaseClass {
 
 		} catch (Throwable pageNavigationError) {
 			System.out.println("Didn't navigate to correct webpage");
-//			SendAttachmentInEmailFail();
+			SendAttachmentInEmailFail();
 
 		}
 
@@ -91,14 +91,14 @@ public class LoginPage extends BaseClass {
 
 			System.out.println("Navigated to correct webpage");
 
-//			SendAttachmentInEmailPass();
+			SendAttachmentInEmailPass();
 
 		} catch (Throwable pageNavigationError) {
 			System.out.println("dashboard is not visible");
 
 			System.out.println("Didn't navigate to correct webpage");
 
-//			SendAttachmentInEmailFail();
+			SendAttachmentInEmailFail();
 
 		}
 
