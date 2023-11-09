@@ -99,6 +99,7 @@ public class LoginPage extends BaseClass {
 			System.out.println("Didn't navigate to correct webpage");
 
 			SendAttachmentInEmailFail();
+			System.out.println("failed mail sent suceessfully");
 
 		}
 
