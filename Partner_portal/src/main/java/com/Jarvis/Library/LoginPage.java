@@ -73,7 +73,7 @@ public class LoginPage extends BaseClass {
 		System.out.println("clicked on login button");
 		try {
 
-			WebElement dashboard = driver.findElement(By.xpath("//span[contains(.,'Dashboard')]"));
+			WebElement dashboard = driver.findElement(By.xpath("//span[conta(.,'Dashboard')]"));
 		
 			Assert.assertEquals(true, dashboard.isDisplayed());
 			System.out.println("Login successful");

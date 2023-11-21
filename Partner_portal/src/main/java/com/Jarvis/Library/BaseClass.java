@@ -70,7 +70,6 @@ public class BaseClass {
 			if (browser.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				option = new ChromeOptions();
-			
 
 				option.addArguments("start-maximized"); // open Browser in maximized mode
 				option.addArguments("disable-infobars"); // disabling infobars
@@ -222,8 +221,7 @@ public class BaseClass {
 			// set the actual message
 			messageBodyPart.setText("Hello Team, \r\n" + "\r\n"
 					+ "Automation testing is done on JARVIS Partner portal which was carried out within the Live Environment.\r\n"
-					+ "\r\n  "
-					+ "\r\n" + "\r\nBest Regards," + "\r\nJarvis Team");
+					+ "\r\n  " + "\r\n" + "\r\nBest Regards," + "\r\nJarvis Team");
 
 			// Create a multiple message
 			MimeMultipart multipart = new MimeMultipart();
@@ -274,6 +272,7 @@ public class BaseClass {
 
 		}
 	}
+
 	public void SendAttachmentInEmailFail() {
 
 		// Recipient's email ID needs to be mentioned.
@@ -324,25 +323,23 @@ public class BaseClass {
 			// set the actual message
 			messageBodyPart.setText("Hello Team, \r\n" + "\r\n"
 					+ "Automation testing is done on JARVIS Partner portal and the error occures while running the Test suite.\r\n"
-					+ "\r\n error are as follows : "
-					+ "\r\n" + "\r\nBest Regards," + "\r\nJarvis Team");
-//
+					 + "\r\n" + "\r\nBest Regards," + "\r\nJarvis Team");
 
 			// Create a multiple message
 			MimeMultipart multipart = new MimeMultipart();
-
-			// Set text message part
+//
+//			// Set text message part
 			multipart.addBodyPart(messageBodyPart);
-
-			// Part two is attachment1 -- Emailable report
-			messageBodyPart = new MimeBodyPart();
-			String filename = (System.getProperty("user.dir") + "/test-output/emailable-report.html");
-
-			FileDataSource source = new FileDataSource(filename);
-			messageBodyPart.setDataHandler(new DataHandler(source));
-			messageBodyPart.setFileName(filename);
-			multipart.addBodyPart(messageBodyPart);
-
+//
+//			// Part two is attachment1 -- Emailable report
+//			messageBodyPart = new MimeBodyPart();
+//			String filename = (System.getProperty("user.dir") + "/test-output/emailable-report.html");
+//
+//			FileDataSource source = new FileDataSource(filename);
+//			messageBodyPart.setDataHandler(new DataHandler(source));
+//			messageBodyPart.setFileName(filename);
+//			multipart.addBodyPart(messageBodyPart);
+//
 //			// attachment 2-- extend report
 //			messageBodyPart = new MimeBodyPart();
 //			String filename1 = (System.getProperty("user.dir") + "/Extent Report.html");
@@ -350,7 +347,7 @@ public class BaseClass {
 //			messageBodyPart.setDataHandler(new DataHandler(source2));
 //			messageBodyPart.setFileName(filename1);
 //			multipart.addBodyPart(messageBodyPart);
-
+//
 			// ---JARVIS LOGO----
 //			messageBodyPart = new MimeBodyPart();
 //
@@ -360,7 +357,7 @@ public class BaseClass {
 //			messageBodyPart.setDataHandler(new DataHandler(source3));
 ////			messageBodyPart.setFileName(filename3);
 //			multipart.addBodyPart(messageBodyPart);
-
+//
 			message.setContent(multipart);
 
 			// Send message
