@@ -21,7 +21,6 @@ public class LoginPage extends BaseClass {
 	@FindBy(xpath = "//input[@name=\"password\"]")
 	private WebElement Password;
 	@FindBy(xpath = "//button[contains(.,'LOG')]")
-
 	private WebElement ClickOnLoginButton;
 	// span[contains(.,'Dashboard')]
 	@FindBy(css = "//span[contains(.,'Dashboard')]")
@@ -73,7 +72,7 @@ public class LoginPage extends BaseClass {
 		System.out.println("clicked on login button");
 		try {
 
-			WebElement dashboard = driver.findElement(By.xpath("//span[conta(.,'Dashboard')]"));
+			WebElement dashboard = driver.findElement(By.xpath("//span[contains(.,'Dashboard')]"));
 		
 			Assert.assertEquals(true, dashboard.isDisplayed());
 			System.out.println("Login successful");
